@@ -260,6 +260,10 @@ return /******/ (function(modules) { // webpackBootstrap
 	    }
 	  },
 	  componentWillReceiveProps: function componentWillReceiveProps(nextProps) {
+	    this.setState({
+	      animating: false
+	    });
+
 	    if (this.props.slickGoTo != nextProps.slickGoTo) {
 	      this.changeSlide({
 	        message: 'index',
